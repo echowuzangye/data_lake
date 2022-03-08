@@ -1,5 +1,5 @@
 # Summary of the project
-A music streaming startup Sparkify, has grown their user base and song database and want to move their data warehouse to data lake. This project uses AWS to build an ETL pipeline that bextracts their data from S3, processes them using Spark, and loads the data back into S3 as a set of dimensional tables. 
+A music streaming startup Sparkify, has grown their user base and song database and want to move their data warehouse to data lake. This project uses AWS to build an ETL pipeline that extracts their data from S3, processes them using Spark, and loads the data back into S3 as a set of dimensional tables. 
 
 # Database Schema
 Fact table: songplays
@@ -12,7 +12,7 @@ Dimention tables: users, songs, artists, time
 - In Putty, run spark-submit etl.py
 
 # Explanation of the files
-- etl.py reads song_data and log_data from S3, ransforms them to create five different tables, and writes them to partitioned parquet files on S3
+- etl.py reads song_data and log_data from S3, transforms them to create five different tables, and writes them to partitioned parquet files on S3
 - dl.cfg contains AWS credentials
 
 # Resource and helpful link
